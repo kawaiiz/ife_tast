@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+body{font:18px kranky bold;
+	background:#D3C8C8;
+    padding:0px;
+    margin: 0px;}
+#ab{height:50px;
+	padding-left: 10px;
+	margin:0px;
+	background:#4D4B4B;
+   }
+h1{display:inline;
+   color:#FFFFFF;
+   margin:0px;
+   line-height: 50px;
+   }
+ul{float: right;}
+ul li{float: left;
+     margin: 0px 20px;
+	height: auto;
+	color: aqua;
+   }
+a{text-decoration:none;
+  color: aqua;
+  }
+#axb{
+	background: #313131;
+	color: aliceblue;}
+table td{font:1px soild "黑体"," 仿宋"," 楷体"," 隶书"," 宋体"," 微软雅黑"," 幼圆"	}
+#bc{background:#FFFFFF;
+   margin: 20px;
+	padding: 15px;
+    }
+#cd{background:#FFFFFF;
+   margin: 20px;
+	padding: 15px;
+    }
+#de{background:#FFFFFF;
+   margin: 20px;
+	padding: 15px;
+    }
+p{text-indent:2em;}
+span{font-weight: bold;}
+table td{width: auto}
+table tr{height: 10px;}
+#name{font-size: 10px;}
+   

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{font-size:18px;
+		font-weight:600;
+	  }
+	.p1{width: 100px;
+		text-align:right;
+		margin: 5px 20px;
+		display: inline-block;
+		}
+	.shuru{height: 35px;
+		  width: 300px;
+		border: 1px solid #E3E3E3;
+		border-radius:5px; 
+		margin: 5px 20px;
+		padding-left:25px;
+	}
+	#anniu{
+		margin-left: 400px;
+		height:35px;
+		width: 80px;
+		border: 1px solid  #2862FF;			
+		border-radius: 5px;
+		background-color:#2862FF;
+		color:aliceblue;
+		text-align: center;
+	}
+	.p2{margin: 0px 96px;
+		font-size: 15px;
+		color: #D4D4D4;}
+	</style>
+</head>
+
+<body>
+	<div id="big">
+	<p id="minc" class="p1">姓名</p><input type="text" id="minc_2" class="shuru" onfocus="tishi(this)">
+		<p id="minc_1" class="p2">&nbsp;</p>
+	<p id="mima" class="p1">密码</p><input type="text" id="mima_2" class="shuru">
+		<p id="mima_1" class="p2">&nbsp;</p>
+	<p id="quer" class="p1">密码确认</p><input type="text" id="quer_2" class="shuru">
+		<p id="quer_1" class="p2">&nbsp;</p>
+	<p id="email" class="p1">邮箱</p><input type="text" id="email_2" class="shuru">
+		<p id="email_1" class="p2">&nbsp;</p>
+	<p id="phone" class="p1">手机号码</p><input type="text" id="phone_2" class="shuru">
+		<p id="phone_1" class="p2">&nbsp;</p>
+		</div>
+    <button id="anniu" onclick="yanzheng()">验证</button>
+
+	<script>
+		function tishi(obj){
+			var d=minc_2;
+			
+			alert(d==minc_2);
+			if(d==minc_2)
+				{	
+					document.getElementById("minc_1").innerHTML="必填，长度为4~16个字符";
+				}
+		}
+			function yanzheng(){	
+	var a=document.getElementById("shuru");
+		var b=document.getElementById("p2");
+			alert(a.value.length);
+			if(!a.value)
+			{
+
+			a.style.borderColor="red";
+			b.innerHTML="姓名不能为空";
+			b.style.color="red";
+			}
+		else
+			{//alert(a.value.length);
+				var len=0;
+			 for(var i=0;i<a.value.length;i++)
+				 {
+				 var c=a.value.charCodeAt(i);
+				
+				if (c>=0 && c<= 128) 
+					  { len++; 
+     					} 
+     				  else{ 
+      					len+=2; 
+     					}
+				 }
+			
+			if(len>=4&&len<=16)
+				 {
+					 a.style.borderColor="green";
+					 b.innerHTML="姓名格式正确";
+					 b.style.color="green";
+				 }
+			else
+				{
+				 a.style.borderColor="red";
+				b.innerHTML="姓名格式错误";
+				b.style.color="red";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

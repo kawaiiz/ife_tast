@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>error</title>
+</head>
+
+<body>
+<script>
+	function myer(msg){
+		this.name="这丫是error";
+		this.message=msg||"默认的错误信息";
+	}
+	myer.prototype=Object.create(Error.prototype);
+	myer.prototype.constructor=myer;
+	try{
+		throw new myer(); 
+		
+	}
+	catch(e){
+		alert(e.name+":"+e.message);
+		console.log(e.name+":"+e.message);
+	}
+	</script>
+</body>
+</html> 

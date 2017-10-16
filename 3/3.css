@@ -1,0 +1,41 @@
+/* CSS Document */
+body{margin: 0px;
+     padding: 20px;}
+.big{margin:0px auto;
+     padding:20px; 
+	 background: #eee;
+     overflow:auto;  
+	 min-width: 600px;
+	 border: 1px solid #999;
+	position: relative;
+    }
+.left{float: left;
+	 margin:0px;
+     padding: 20px; 
+	 width: 160px;
+	 background: #fff;
+	 border: 1px solid #999;
+     }
+.name{width: 180px;
+      text-align: center;}
+.middle{position: absolute;
+	   left:240px;
+	   right: 160px;
+       padding: 20px; 
+	   background: #fff; 
+	   border: 1px solid #999;
+	   margin-bottom: 20px;
+       }
+p{text-indent: 2em;}
+.right{float: right;
+       padding: 20px; 
+	   width: 80px;
+	   height: auto;
+	   background: #fff;
+	    border: 1px solid #999
+      }
+.a{margin-bottom:17px;/*三像素BUG*/
+  }
+.b{margin-bottom: -3PX;}
+.logo{float: left}
+
